@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Search(props) {
   const [search, setSearch] = useState("");
 
@@ -11,11 +9,9 @@ function Search(props) {
   return (
     <>
       <div>
-        Cari Article: <input onChange={changeSearch}></input>{" "}
+        Cari Article: <input onChange={onSearchChange} />
       </div>
       <small>Tidak Ditemukan dengan kata {search}</small>
     </>
   );
 }
-
-export default Search;

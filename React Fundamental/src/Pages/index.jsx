@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Article from "../components/Article";
 import post from "../post.json";
-import Search from "../components/search";
+import Search from "../components/Search";
 
 function HomePage() {
   const onSearchChange = (value) => {
