@@ -3,7 +3,7 @@ function Article(props) {
     <>
       <div>{props.title}</div>
       <small>
-        Date: {props.date}, Tag: {props.tag.join(", ")}
+        Date: {props.date}, Tag: {props.Tag.join(", ")}
       </small>
     </>
   );
