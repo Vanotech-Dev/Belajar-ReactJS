@@ -5,13 +5,9 @@ function HomePage() {
   return (
     <>
       <h1 className="">Simple Blog</h1>
-      {post.map((blog) => (
-        <Article
-          key={blog.title}
-          title={blog.title}
-          Tag={blog.Tags}
-          date={blog.date}
-        />
+      {post.map(({ title, Tags, date }) => (
+        // <Article key={title} title={title} Tag={Tags} date={date} />
+        <Article {...{ title, Tags, date }} /> // saya diajarkan menggunakan spread atributes
       ))}
     </>
   );
