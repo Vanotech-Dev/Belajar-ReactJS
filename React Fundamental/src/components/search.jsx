@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function Search(props) {
   const [search, setSearch] = useState("");
 
@@ -15,3 +17,5 @@ function Search(props) {
     </>
   );
 }
+
+export default Search;
