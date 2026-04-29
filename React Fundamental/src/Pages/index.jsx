@@ -1,13 +1,19 @@
+import { useState } from "react";
 import Article from "../components/Article";
 import post from "../post.json";
+import Search from "../components/search";
 
 function HomePage() {
+  const onSearchChange = (value) => {
+    console.log(value);
+  };
   return (
     <>
       <h1 className="">Simple Blog</h1>
-      {post.map(({ title, Tags, date }) => (
-        // <Article key={title} title={title} Tag={Tags} date={date} />
-        <Article {...{ title, Tags, date }} /> // saya diajarkan menggunakan spread atributes
+      <Search onSearchChange={onSearchChange} />
+      {post.map((props, index) => (
+        // <Article key={title} title={title} Tags={Tags} date={date} />
+        <Article {...props} key={index} /> // saya diajarkan menggunakan spread atributes
       ))}
     </>
   );
