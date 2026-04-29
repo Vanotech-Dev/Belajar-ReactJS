@@ -1,7 +1,7 @@
 function Article(props) {
   return (
     <>
-      <div>{props.title}</div>
+      <h3>{props.title}</h3>
       <small>
         Date: {props.date}, Tag: {props.Tag.join(", ")}
       </small>

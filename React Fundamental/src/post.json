@@ -1,17 +1,17 @@
 [
   {
     "title": "Tutorial Belajar React JS",
-    "Tag": ["React", "Frontend"],
+    "Tags": ["React", "Frontend"],
     "date": "2026-01-01"
   },
   {
     "title": "Tutorial Belajar Tailwindcss",
-    "Tag": ["Tailwind", "Frontend"],
+    "Tags": ["Tailwind", "Frontend"],
     "date": "2026-01-10"
   },
   {
     "title": "Membuat Website dengan ReactJS dan Tailwindcss",
-    "Tag": ["React", "Frontend", "TailwindCSS"],
+    "Tags": ["React", "Frontend", "TailwindCSS"],
     "date": "2026-01-20"
   }
 ]
